@@ -7,6 +7,11 @@
   flex-flow: row nowrap;
 }
 
+.s-wrapper video{
+  position: fixed;
+  width: 100%;
+}
+
 .s-wrapper .s-left-column{
   width: 100px;
   height: 100%;
@@ -23,8 +28,8 @@
 .s-wrapper .s-main-content{
   height: 100%;
   width: 100%;
-  background-color: gray;
   padding-left: 130px;
+  position: relative;
 }
 
 .navigator{
@@ -86,12 +91,6 @@
   top: -20px; 
 }
 
-.s-wrapper .s-main-content{
-  height: 100%;
-  width: 100%;
-  background-color: gray;
-  padding-left: 130px;
-}
 
 .s-wrapper .s-main-content__top{
   height: 80vh;
@@ -108,9 +107,11 @@
 }
 
 .s-wrapper .s-main-content .s-logo img{
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 0;
   margin-bottom: 30px;
+  max-height: 15vh;
+  max-width: 60vw;
 }
 
 .pills ul{
@@ -221,5 +222,10 @@ a.link-button .label{
 
 .s-spiderman-01-01{
   background-image: url(../images/spiderman-tobey/movie-01/background.png);
+  background-size: cover;
+}
+
+.s-spiderman-01-02{
+  background-image: url(../images/spiderman-tobey/movie-02/background.png);
   background-size: cover;
 }
